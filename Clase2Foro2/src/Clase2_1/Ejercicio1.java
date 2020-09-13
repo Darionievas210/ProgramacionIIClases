@@ -19,8 +19,7 @@ public class Ejercicio1 {
         for(int i=0; i<4; i++ ){
             
             System.out.print("Ingrese oración " +(i+1)+" : ");
-            Vector[i] = teclado.nextLine();
-       
+            Vector[i] = teclado.nextLine();      
         }
         
         //Mostrar Vector
