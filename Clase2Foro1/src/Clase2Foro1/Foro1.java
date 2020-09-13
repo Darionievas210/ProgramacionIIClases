@@ -60,6 +60,6 @@ public class Foro1 {
        
        for(int i=0; i<elementos; i++){
            System.out.println(Vector[i]);
-       }    
+       }
     }
 }
