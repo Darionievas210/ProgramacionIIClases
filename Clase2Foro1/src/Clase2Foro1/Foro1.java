@@ -18,8 +18,7 @@ public class Foro1 {
             
             System.out.print("ingrese valor para la posicion "+(i+1)+":");
             int datos = teclado.nextInt();
-            Vector[i]=datos;
-            
+            Vector[i]=datos;           
         }
         //----------------------------------------------------------------------
         System.out.println("");
