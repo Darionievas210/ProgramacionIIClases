@@ -114,30 +114,25 @@ public class LibretaBasica {
                 Scanner entrada2 = new Scanner(System.in);
                 System.out.print("Ingrese posición a eliminar:  ");
                 int pos = entrada2.nextInt();
-                for (int i=0;i<=vector.length;i++){
-                    if (pos == i+1){
-                        this.vector[i]=" --- (Recientemente eliminado)";
+                for (int i=1;i<vector.length+1;i++){
+                    if (pos == i){
+                        this.vector[i-1]=" --- (Recientemente eliminado)";
                         System.out.println("");
                         System.out.println("POSICIÓN ELIMINADA!");
                         break;
                     }
+                    
                     else if(this.vector[i]==null){
                         System.out.println("");
                         System.out.println("NO HAY ELEMENTOS EN LA LIBRETA AÚN");
                         break;
                     }
-                    else if(this.vector[i+1].equals(" --- (Recientemente eliminado)")){
+                    else if(this.vector[i].equals(" --- (Recientemente eliminado)")){
                         System.out.println("");
                         System.out.println("NO SE ENCONTRO ELEMENTO EN LA LIBRETA!");
                         break;    
                     }
-                    else if(this.vector[+1].equals("")){
-                        System.out.println("");
-                        System.out.println("EL CAMPO DE LA LIBRETA ESTABA VACIO!");
-                        break;
                 }
             }
         }
 }       
-}
-        
